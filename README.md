@@ -16,7 +16,13 @@ case of regularizing using this method, it is required.
 
 ## Linear bimodal
 Simple linear bimodal test case to get started.
+
+* Blue points are observations
+* Red points are predictions (or rather, the means of the gaussian 
+  mixture)
 ![linear](linear.png)
+
+
 
 ## Quadratic bimodal
 Required some changes to hyperparameters in order to converge
