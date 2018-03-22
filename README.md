@@ -2,10 +2,17 @@
 Generating 100 samples from a neural network, creating a gaussian 
 mixture.
 
+This method is very simple as we just:
+1. add noise in the network
+2. make multiple predictions (by repeating the data)
+3. use gaussian mixture loss (extension of square error)
+
+The same network is used in all the following examples.
+
 Initially an additional loss function was considered, in order
-to force the noise into the network. However, it is of course not
-needed in this application since a KDE is created. In the case of
-regularization using this method it is required.
+to force the noise into the network. However, it is not needed in 
+this application since the gaussian mixture is created. In the 
+case of regularizing using this method, it is required.
 
 ## Linear bimodal
 Simple linear bimodal test case to get started.
